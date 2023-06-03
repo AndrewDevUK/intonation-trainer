@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Intonation Trainer</title>
+</head>
+<body>
+    <div class="container main-container">
+        <h1 class="display-2">Intonation Trainer</h1>
+        <hr>
+
+        <div class="row mb-3">
+            <div class="btn-group" role="group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradioEasy" autocomplete="off" checked>
+                <label class="btn btn-outline-success" for="btnradioEasy">Easy</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradioMedium" autocomplete="off">
+                <label class="btn btn-outline-success" for="btnradioMedium">Medium</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradioHard" autocomplete="off">
+                <label class="btn btn-outline-success" for="btnradioHard">Hard</label>
+              </div>
+        </div>
+        <div class="row mb-3">
+            <div class="progress" role="progressbar">
+                <div id="progressBar" class="progress-bar bg-success" style="width: 0%;"></div>
+            </div>
+        </div>
+        <form class="row align-items-end">
+            <div class="col-2 mb-3">
+                <label for="keySelection" class="form-label">Key</label>
+                <select class="form-control" name="key" id="keySelection">
+                    <option value="cMaj">C</option>
+                    <option value="gMaj">G</option>
+                    <option value="dMaj">D</option>
+                    <option value="aMaj">A</option>
+                    <option value="eMaj">E</option>
+                    <option value="bMaj">B</option>
+                    <option value="cFlatMaj">C&#x266d</option>
+                    <option value="fSharpMaj">F&#x266f</option>
+                    <option value="gFlat">G&#x266d</option>
+                    <option value="cSharpMaj">C&#x266f</option>
+                    <option value="dFlatMaj">D&#x266d</option>
+                    <option value="aFlatMaj">A&#x266d</option>
+                    <option value="eFlatMaj">E&#x266d</option>
+                    <option value="bFlatMaj">B&#x266d</option>
+                    <option value="fMaj">F</option>
+                    <option value="aMin">a</option>
+                    <option value="eMin">e</option>
+                    <option value="bMin">b</option>
+                    <option value="fSharpMin">f&#x266f</option>
+                    <option value="cSharpMin">c&#x266f</option>
+                    <option value="gSharpMin">g&#x266f</option>
+                    <option value="dShardMin">d&#x266f</option>
+                    <option value="eFlatMin">e&#x266d</option>
+                    <option value="bFlatMin">b&#x266d</option>
+                    <option value="fMin">f</option>
+                    <option value="cMin">c</option>
+                    <option value="gMin">g</option>
+                    <option value="dMin">d</option>
+                </select>
+            </div>
+            <div class="col mb-3">
+                <button class="btn btn-success" id="startStopButton">Start</button>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <img src="" alt="" id="noteImage">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
