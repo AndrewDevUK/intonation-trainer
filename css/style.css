@@ -11,5 +11,10 @@ body {
     #noteImage {
         width: 80%;
         height: auto;
-    }    
+    } 
+    
+    #keyImage {
+        width: 50%;
+        height: auto;
+    }
 }

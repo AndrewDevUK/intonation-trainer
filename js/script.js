@@ -47,7 +47,6 @@ function displayRandomNoteImage()
     currentImage = imageNames[imageNumber];
 
     document.getElementById("noteImage").setAttribute("src", imageSource);
-    console.log(imageSource);
 }
 
 function getDifficulty()
@@ -103,4 +102,69 @@ document.getElementById("startStopButton").addEventListener("click", (event) => 
     event.preventDefault();
 
     runGame(getDifficulty());
+});
+
+document.getElementById("keySelection").addEventListener("change", (event) => {
+    let keyImage = document.getElementById("keyImage");
+    
+    switch(event.target.value) {
+        case "cMaj":
+        case "aMin":
+            keyImage.setAttribute("src", "images/key-signatures/none.png");
+            break;
+        case "gMaj":
+        case "eMin":
+            keyImage.setAttribute("src", "images/key-signatures/1S.png");
+            break;
+        case "dMaj":
+        case "bMin":
+            keyImage.setAttribute("src", "images/key-signatures/2S.png");
+            break;
+        case "aMaj":
+        case "fSharpMin":
+            keyImage.setAttribute("src", "images/key-signatures/3S.png");
+            break;
+        case "eMaj":
+        case "cSharpMin":
+            keyImage.setAttribute("src", "images/key-signatures/4S.png");
+            break;
+        case "bMaj":
+        case "gSharpMin":
+            keyImage.setAttribute("src", "images/key-signatures/5S.png");
+            break;
+        case "fSharpMaj":
+        case "dSharpMin":
+            keyImage.setAttribute("src", "images/key-signatures/6S.png");
+            break;
+        case "cSharpMaj":
+            keyImage.setAttribute("src", "images/key-signatures/7S.png");
+            break;
+        case "cFlatMaj":
+            keyImage.setAttribute("src", "images/key-signatures/7F.png");
+            break;
+        case "gFlatMaj":
+        case "eFlatMin":
+            keyImage.setAttribute("src", "images/key-signatures/6F.png");
+            break;
+        case "dFlatMaj":
+        case "bFlatMin":
+            keyImage.setAttribute("src", "images/key-signatures/5F.png");
+            break;
+        case "aFlatMaj":
+        case "fMin":
+            keyImage.setAttribute("src", "images/key-signatures/4F.png");
+            break;
+        case "eFlatMaj":
+        case "cMin":
+            keyImage.setAttribute("src", "images/key-signatures/3F.png");
+            break;
+        case "bFlatMaj":
+        case "gMin":
+            keyImage.setAttribute("src", "images/key-signatures/2F.png");
+            break;
+        case "fMaj":
+        case "dMin":
+            keyImage.setAttribute("src", "images/key-signatures/1F.png");
+            break;
+    }
 });
