@@ -7,6 +7,10 @@ body {
     background-color: #fff;
 }
 
+#keySelection {
+    min-width: 45px;
+}
+
 @media screen and (max-width: 768px){
     #noteImage {
         width: 80%;
